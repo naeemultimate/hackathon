@@ -9,3 +9,5 @@
 - Take turns between player 1 and 2
 - Build a GUI on webpage
 - s
+
+_Make sure to check chat at times_
