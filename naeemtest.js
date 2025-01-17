@@ -8,16 +8,33 @@ function rollTheDice() {
 }
 
 function startGame(){
-    let player1Score = 0
-    let player2Score = 0
+    let humanScore = 0
+    let compScore = 0
     let round = 1
 
     while (true) {
+        console.log(`This is round: ${round}`); //Display round each iteration
+
         let answer = prompt('Would you like to roll a dice? (yes/no):').toLowerCase();
 
         if (answer === 'yes') { 
-            let  humanResult= rollTheDice();
-            let  compResult= rollTheDice();
+            let humanResult = 0
+            let compResult = 0
+
+             if(round % 2 !== 0){ //Start
+                console.log("You are rolling first!");
+                let  humanResult= rollTheDice();
+                console.log(`You rolled a ${humanResult}`);
+
+                compResult = rollTheDice()
+                console.log(`Computer rolled a ${compResult}`);
+             } else {
+                console.log("Computer ");
+             }
+
+
+            
+            
         
             console.log(`You rolled a ${humanResult}`)
             console.log(`Computer rolled a ${compResult}`)
@@ -45,4 +62,4 @@ function startGame(){
 }
 
 
-startGame() // <---- Starts game from here
+startGame() 

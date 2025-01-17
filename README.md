@@ -1,6 +1,6 @@
 # Roll a dice game
 
-This simple command-line interface game simulates rolling a six-sided dice. The game then generates a random number between 1 and 6 when the user rolld the dice. The random number generation simulates rolliing a real dice.
+This simple command-line interface game simulates rolling a six-sided dice. 
 
 ## How to run the game
 
@@ -19,3 +19,16 @@ This simple command-line interface game simulates rolling a six-sided dice. The 
 
 4. **Run the game to start**
    - run `node roll-a-dice.js`
+
+5. **Playing the game**
+   - User is prompted to roll a dice
+      - Select yes or no
+      - You and the computer both roll
+      - Winner of the roll is logged
+      - Score is tracked each round
+      - Can continue playing as many times
+   
+   - To stop playing, type no when prompted
+
+### Limitations
+- Only CLI as of current version
