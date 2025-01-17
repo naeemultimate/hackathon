@@ -13,13 +13,9 @@ function startGame(){
     let round = 1
 
     while (true) {
-        // console.log(`This is round: ${round} ....`); //Prints the round number each time
-        // console.log("Player 1's turn: "); //FIRST TURN
-        // player1Score = player1Score + //players turn function
-
         let answer = prompt('Would you like to roll a dice? (yes/no):').toLowerCase();
 
-        if (answer === 'yes') { // <------------Highlight this bracket to see where it ends
+        if (answer === 'yes') { 
             let  humanResult= rollTheDice();
             let  compResult= rollTheDice();
         
@@ -37,9 +33,11 @@ function startGame(){
         } 
         
 
-    } else { // THE NO OPTION where program ends!
+    } else if (answer === 'no'){ // THE NO OPTION where program ends!
         console.log("Thanks for playing!");
         break;
+    } else if (answer !== 'yes' && answer !== 'no'){
+        console.log("Please enter a valid input!"); //invalid input message here
     }
    
 }
